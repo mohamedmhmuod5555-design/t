@@ -37,7 +37,7 @@ st.write(num1,sign,num2)
 number=st.number_input("ادخل النتيجه ")
 if st.button("تأكيد التخمين "):
   st.session_state.count += 1
-  if number == sc:
+if number == sc:
   st.success("  اجابتك صحيحه انك اسطوره يا عبقري الرياضه  ")
   st.session_state.num += 1
   st.session_state.num1=random.randint(1,st.session_state.ran)
