@@ -45,7 +45,7 @@ if number == sc:
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
   st.rerun()
-  else:
+if number =! sc:
      st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
      st.session_state.num =0
      st.session_state.num1=random.randint(1,st.session_state.ran)
