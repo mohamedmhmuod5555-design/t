@@ -44,7 +44,7 @@ if number == sc:
   st.session_state.num2=random.randint(1,st.session_state.ran)
   st.session_state.sign=random.choice(['+','-','*','/'])
   time.sleep(1)
-  st.rerun()
+  
 if number != sc:
      st.error(f"اجابتك خاطئة! الإجابة الصحيحة كانت : {sc}")
      st.session_state.num =0
@@ -52,7 +52,7 @@ if number != sc:
      st.session_state.num2=random.randint(1,st.session_state.ran)
      st.session_state.sign=random.choice(['+','-','*','/'])
      time.sleep(1)
-     st.rerun()
+     
 
 if st.session_state.num > 0 and st.session_state.num % 10 == 0:
   st.success("انت بطل! تحدي صديقك انه بالطبع لن يستطيع ان يصل لمستواك  ")
